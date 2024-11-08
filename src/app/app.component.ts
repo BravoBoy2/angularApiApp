@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { ApiService } from './Shared/Services/ApiServices';
-import { MatListModule } from '@angular/material/list'
+import { NavigationComponent } from './navigation/navigation.component';
+import { RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatListModule],
+  imports: [NavigationComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

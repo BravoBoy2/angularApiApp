@@ -8,7 +8,8 @@ import { HttpClient } from "@angular/common/http";
 })
 
 export class ApiService {
-    private apiUrl = "api/posts"
+    private apiUrl = "api/posts";
+    
 
     constructor(private http: HttpClient) {}
     

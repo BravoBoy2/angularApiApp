@@ -1,0 +1,19 @@
+  <mat-toolbar color="primary">
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/">Home</button>
+  <button mat-button routerLink="register">Register</button>
+  <button mat-button>Contact</button>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button routerLink="" routerLinkActive="active"  mat-menu-item ariaCurrentWhenActive="page">Home</button>
+  <button routerLink="register" routerLinkActive="active" mat-menu-item ariaCurrentWhenActive="page">Register</button>
+  <button mat-menu-item>Contact</button>
+</mat-menu>
+
+
+ 
