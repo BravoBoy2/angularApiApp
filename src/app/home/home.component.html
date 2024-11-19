@@ -1,1 +1,12 @@
-<p>home works!</p>
+@for(post of posts; track post.id){
+  <div >
+    <span mat-card-avatar>{{post.id}}</span>
+    <h1 mat-card-title>
+      {{post.title}}
+    </h1>
+    <p matListItemLine>
+      {{post.content}}
+    </p>
+  </div>
+}
+

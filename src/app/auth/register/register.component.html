@@ -7,8 +7,8 @@
       @if (hasDisplableError('name')) {
         <mat-error>Name is required</mat-error>}
     </mat-form-field>
-      
-      
+
+
 
     <!-- Email -->
        <mat-form-field>
@@ -24,26 +24,26 @@
     </mat-form-field>
 
 <!-- password -->
-      <!-- <mat-form-field>
+       <mat-form-field>
       <mat-label>password</mat-label>
       <input type="password" matInput formControlName="password" >
 
        @if (registerForm.get('password')?.hasError('minlength')) {
         <mat-error>
-          Must be at least 8 characters long 
+          Must be at least 8 characters long
         </mat-error>
       }
 
        @else if (hasDisplableError('password')) {
         <mat-error>Password is required</mat-error>
       }
-      </mat-form-field> -->
+      </mat-form-field>
 
-    
+
     <!-- password Confirmation -->
-       <!-- <mat-form-field>
+    <mat-form-field>
       <mat-label>Password Confirmation</mat-label>
-      <input type="password" matInput mat formControlName="password_confirmation">
+      <input type="password" matInput formControlName="password_confirmation">
 
           @if (registerForm.get('password_confirmation')?.hasError('notSame')) {
           <mat-error>Password didn't match</mat-error>
@@ -51,11 +51,11 @@
 
          @else if (hasDisplableError('password_confirmation')) {
           <mat-error> This field is required  </mat-error>
-        } 
+        }
 
-      
-      
-    </mat-form-field>  -->
+
+
+    </mat-form-field>
 
 
     <!-- button -->
