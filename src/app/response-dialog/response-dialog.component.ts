@@ -1,19 +1,15 @@
-import { Component, Inject } from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog'
+import { Component, inject } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import {MAT_DIALOG_DATA, MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle} from '@angular/material/dialog'
 
 @Component({
   selector: 'app-response-dialog',
   standalone: true,
-  imports: [],
+  imports: [MatDialogContent, MatButtonModule, MatDialogClose, MatDialogActions, MatDialogTitle],
   templateUrl: './response-dialog.component.html',
   styleUrl: './response-dialog.component.css'
 })
 export class ResponseDialogComponent {
-constructor(public dialogRef: MatDialogRef<ResponseDialogComponent>,
-  @Inject(MAT_DIALOG_DATA) public data : {title: string, message : string}) {}
-
-onClose() : void {
-  this.dialogRef.close();
-}
+  data = inject(MAT_DIALOG_DATA);
 
 }

@@ -13,6 +13,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angularApiApp';
+  // data = inject(MAT_DIALOG_DATA)
 
 
     posts: any[] = [];
@@ -20,7 +21,7 @@ export class AppComponent {
   constructor(private apiService: ApiService){}
 
   ngOnInit(): void { this.apiService.getPosts().
-    subscribe( 
+    subscribe(
       data => { this.posts = data;
 });
   }
