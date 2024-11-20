@@ -6,7 +6,7 @@ import {MAT_DIALOG_DATA, MatDialogActions, MatDialogClose, MatDialogContent, Mat
     selector: 'app-response-dialog',
     imports: [MatDialogContent, MatButtonModule, MatDialogClose, MatDialogActions, MatDialogTitle],
     templateUrl: './response-dialog.component.html',
-    styleUrl: './response-dialog.component.css'
+    styleUrl: './response-dialog.component.scss'
 })
 export class ResponseDialogComponent {
   data = inject(MAT_DIALOG_DATA);

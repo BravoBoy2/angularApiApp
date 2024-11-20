@@ -9,7 +9,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     selector: 'navigation',
     imports: [RouterLink, RouterLinkActive, MatButtonModule, MatIconModule, MatToolbarModule, MatMenuModule],
     templateUrl: './navigation.component.html',
-    styleUrl: './navigation.component.css'
+    styleUrl: './navigation.component.scss'
 })
 export class NavigationComponent {
 

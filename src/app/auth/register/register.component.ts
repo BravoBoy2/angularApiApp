@@ -12,7 +12,7 @@ import { MatDialog} from '@angular/material/dialog'
     imports: [ReactiveFormsModule, MatInputModule, MatButtonModule,
         MatCardModule, ReactiveFormsModule],
     templateUrl: './register.component.html',
-    styleUrl: './register.component.css'
+    styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
 
@@ -65,6 +65,7 @@ export class RegisterComponent {
           });
 
           this.registerForm.reset();
+          this.isSubmitted = false;
 
         },
         error: (error : any) => {
