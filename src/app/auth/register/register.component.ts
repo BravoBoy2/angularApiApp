@@ -8,12 +8,11 @@ import { ResponseDialogComponent } from '../../response-dialog/response-dialog.c
 import { MatDialog} from '@angular/material/dialog'
 
 @Component({
-  selector: 'app-register',
-  standalone: true,
-  imports: [ReactiveFormsModule, MatInputModule, MatButtonModule,
-    MatCardModule, ReactiveFormsModule ],
-  templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+    selector: 'app-register',
+    imports: [ReactiveFormsModule, MatInputModule, MatButtonModule,
+        MatCardModule, ReactiveFormsModule],
+    templateUrl: './register.component.html',
+    styleUrl: './register.component.css'
 })
 export class RegisterComponent {
 
